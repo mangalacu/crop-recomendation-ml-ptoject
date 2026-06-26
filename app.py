@@ -14,7 +14,7 @@ page = st.sidebar.selectbox(
     ["Crop Recommendation", "Crop Health Advisor"]
 )
 if page=="Crop Recommendation":
-  df=pd.read_csv('/content/Crop_recommendation_augmented.csv')
+  df=pd.read_csv('Crop_recommendation_augmented.csv')
 
   # feature target splitting
   features = ['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall']
